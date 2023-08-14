@@ -1,0 +1,15 @@
+{% load static %}
+<html>
+    <head><link rel="stylesheet" href="{% static 'style.css' %}"></head>
+<div class="login">
+    <h1>Login</h1>
+      <form action="" method="post">
+        {%  csrf_token %}
+        <input type="text" name="username" placeholder="Username">
+          <input type="password" name="password" placeholder="Password" />
+          <button type="submit" class="btn btn-primary btn-block btn-large">Let me in.</button>
+      </form>
+      {% for ms in messages %}
+      <h1>{{ms}}</h1>
+      {% endfor %}
+  </div></html>
