@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'ER1',
+    'travel',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

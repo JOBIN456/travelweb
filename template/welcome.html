@@ -45,12 +45,12 @@
 									<li class="active"><a href="about.html">About us</a></li>
 									{% if user.is_authenticated %}
 									<li> HELLO {{user.username}}</li>
-									<li><a href="/logout">LOGOUT</a></li>
+									<li><a href="ER1/logout">LOGOUT</a></li>
 									{% else %}
 
 
-									<li><a href="/">Register</a></li>
-									<li><a href="/login">LOGIN</a></li>
+									<li><a href="ER1/register">Register</a></li>
+									<li><a href="ER1/login">LOGIN</a></li>
 									{% endif %}
 								</ul>
 							</nav>

@@ -20,7 +20,8 @@ from ER import settings
 from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('ER1.urls')),
+    path('',include('travel.urls')),
+    path('ER1/',include('ER1.urls')),
     
 
 ]
